@@ -21,10 +21,7 @@ build:
 	strip $(FORWARDER_DIR)/poly_pkt_fwd/poly_pkt_fwd
 
 install: build
-	if [ -d $(INSTALL_DIR) ] ; then
-		echo "The destination directory $(INSTALL_DIR) already exists; aborting"
-		exit 1
-	fi
+	if [ -d $(INSTALL_DIR) ] ; then echo "The destination directory $(INSTALL_DIR) already exists; aborting" ; exit 1 ; fi
 	@echo "Installing into: $(INSTALL_DIR)"
 	mkdir -p $(INSTALL_DIR)
 	
