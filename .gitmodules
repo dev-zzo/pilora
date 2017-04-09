@@ -1,6 +1,6 @@
-[submodule "libloragw"]
-	path = libloragw
-	url = https://github.com/dev-zzo/lora_gateway
 [submodule "ttn_forwarder"]
 	path = ttn_forwarder
 	url = https://github.com/dev-zzo/packet_forwarder
+[submodule "lora_gateway"]
+	path = lora_gateway
+	url = https://github.com/dev-zzo/lora_gateway
