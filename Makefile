@@ -42,10 +42,10 @@ install: build
 	echo '    "ref_altitude": 0,' >> $(INSTALL_DIR)/local_conf.json
 	echo '    "contact_email": "operator@gateway.ttn",' >> $(INSTALL_DIR)/local_conf.json
 	echo '    "description": "The gateway",' >> $(INSTALL_DIR)/local_conf.json
-	echo '    "servers": {' >> $(INSTALL_DIR)/local_conf.json
-	echo '      [ { "server_address": "router.eu.thethings.network", "serv_port_up": 1700, "serv_port_down": 1700, "serv_enabled": true } ],' >> $(INSTALL_DIR)/local_conf.json
-	echo '    },' >> $(INSTALL_DIR)/local_conf.json
-	echo '  },' >> $(INSTALL_DIR)/local_conf.json
+	echo '    "servers": [' >> $(INSTALL_DIR)/local_conf.json
+	echo '      { "server_address": "router.eu.thethings.network", "serv_port_up": 1700, "serv_port_down": 1700, "serv_enabled": true }' >> $(INSTALL_DIR)/local_conf.json
+	echo '    ]' >> $(INSTALL_DIR)/local_conf.json
+	echo '  }' >> $(INSTALL_DIR)/local_conf.json
 	echo '}' >> $(INSTALL_DIR)/local_conf.json
 
 	chmod 0644 $(INSTALL_DIR)/global_conf.json
