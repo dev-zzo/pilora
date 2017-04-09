@@ -10,7 +10,7 @@ FORWARDER_DIR=./ttn_forwarder
 
 build:
 	echo "Building libloragw"
-	sed -i -e 's/PLATFORM= kerlink/PLATFORM= imst_rpi/g' $(LIBLORAGW_DIR)/library.cfg
+	sed -i -e 's/PLATFORM= kerlink/PLATFORM= imst_rpi/g' $(LIBLORAGW_DIR)/libloragw/library.cfg
 	make -C $(LIBLORAGW_DIR)
 
 	echo "Building the packet forwarder"
